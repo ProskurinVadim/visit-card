@@ -1,0 +1,7 @@
+.profile {
+    display: flex;
+    justify-content: center;
+}
+.home-page {
+    padding: 50px 0;
+}

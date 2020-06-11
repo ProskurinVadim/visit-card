@@ -1,0 +1,35 @@
+.contacts {
+    margin-top: 70px;
+}
+.social {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.social-item {
+    margin-right: 25px;
+}
+.github {
+    background-color: #f3f3f3;
+    color: #2b414d;
+}
+.github:hover {
+    background-color: #2b414d;
+    color: #f3f3f3;
+}
+.telegram {
+    background-color: #26a6d1;
+}
+.telegram:hover {
+    background-color: #fff;
+    color: #26a6d1;
+    border: 1px solid #26a6d1;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
