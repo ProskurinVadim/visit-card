@@ -1,6 +1,6 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
-import PrivatrRoute from  "./components/PrivateRouter";
+import {HashRouter, Switch, Route} from "react-router-dom";
+import PrivateRoute from  "./components/PrivateRouter";
 
 import Navbar from "./containers/Navbar";
 import HomePage from "./pages/HomePage";
@@ -12,15 +12,15 @@ import "./style.css";
 import "./reset.css";
 const App = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navbar/>
             <Switch>
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/project" component={ProjectPage}/>
                 <Route exact path="/contacts" component={ContactsPage}/>
-                <PrivatrRoute exact path="/admin" component={AdminPage} />
+                <PrivateRoute exact path="/admin" component={AdminPage} />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 };
 
