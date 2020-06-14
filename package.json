@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://proskurinvadim.github.io/visit-card/",
+  "homepage": "https://proskurinvadim.github.io/visit-card",
   "dependencies": {
     "axios": "^0.19.2",
     "connected-react-router": "^6.8.0",
@@ -36,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
