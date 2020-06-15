@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 import PrivateRoute from  "./components/PrivateRouter";
 
 import Navbar from "./containers/Navbar";
@@ -12,15 +12,15 @@ import "./style.css";
 import "./reset.css";
 const App = () => {
     return (
-        <HashRouter>
+        <BrowserRouter basename="/visit-card">
             <Navbar/>
-            <Switch>
+            <Switch >
                 <Route exact path="/" component={HomePage}/>
                 <Route exact path="/project" component={ProjectPage}/>
                 <Route exact path="/contacts" component={ContactsPage}/>
                 <PrivateRoute exact path="/admin" component={AdminPage} />
             </Switch>
-        </HashRouter>
+        </BrowserRouter>
     )
 };
 
