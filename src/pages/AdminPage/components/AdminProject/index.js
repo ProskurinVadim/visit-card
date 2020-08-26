@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import ProjectForm from "../ProjectForm";
 import AdminProjectItem from "./AdminProjectItem";
-import List from "../../../../components/List";
+import List from "../../../../decorators/List";
 import {addProject,getProjects} from "../../../../store/reducers/project/action";
-import ToggleOpen from "../../../../components/ToggleOpen";
+import ToggleOpen from "../../../../decorators/ToggleOpen";
 
 const AdminProject = ({projects, getProjects, addProject}) => {
     useEffect(() => {
@@ -16,9 +16,9 @@ const AdminProject = ({projects, getProjects, addProject}) => {
     const projectList = List(AdminProjectItem);
     return (
         <div>
-            <h3>Projects</h3>
+            <h3 className="form-header">Projects</h3>
             <ProjectForm onSubmit={projectSubmit} />
-            {projects && <ToggleOpen>{projectList(projects,"project-list","project-item")}</ToggleOpen>}
+            {projects && <ToggleOpen header="project list">{projectList(projects,"project-list","project-item")}</ToggleOpen>}
         </div>
     )
 };

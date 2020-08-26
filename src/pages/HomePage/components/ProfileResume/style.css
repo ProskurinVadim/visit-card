@@ -1,0 +1,32 @@
+.resume-header {
+    font-size: 32px;
+    font-family: 'Balsamiq Sans',sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.resume-block {
+    font-size: 18px;
+    font-family: 'Balsamiq Sans',sans-serif;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    margin-left: 50px;
+    padding: 25px 15px;
+    background-color: #ffffff; /* Фоновый цвет*/
+    border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+    border-radius: 10px; /* Радиус границ*/
+    box-shadow: 0 0 15px #A9A9A9;
+
+}
+
+@media screen and (min-width:320px) and (max-width:760px) {
+    .resume-block {
+        font-size: 14px;
+    }
+    .resume-header  {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+}

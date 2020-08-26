@@ -35,10 +35,10 @@ export default (state = initialState, action) => {
             }
         }
         case UPDATE_LIBRARY : {
-            const updateLibraries = state.libraries.map((item) => (item._id === action.payload._id) ? action.payload : item);
             return {
                 ...state,
-                projects : updateLibraries
+                libraries : state.libraries.map((item) => (item._id === action.payload._id) ? action.payload
+                    : item)
             }
         }
         default : {

@@ -1,8 +1,8 @@
 import React from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import PrivateRoute from  "./components/PrivateRouter";
+import PrivateRoute from  "./components/shared/PrivateRouter";
 
-import Navbar from "./containers/Navbar";
+import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ContactsPage from "./pages/ContactsPage";

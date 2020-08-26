@@ -1,7 +1,17 @@
+
 .profile {
-    display: flex;
-    justify-content: center;
+    padding: 50px 0;
+    background-image: url("./myface.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    clip-path: polygon( 0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+
 }
 .home-page {
-    padding: 50px 0;
+    background-color: rgb(230, 225, 229);
+}
+.resume {
+    margin: 50px 0;
 }

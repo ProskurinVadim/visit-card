@@ -21,8 +21,8 @@ const ProjectForm = (props) => {
                       <Field name="projectName">
                           {({input,meta}) => (
                               <div>
-                                  <label>Project Name</label>
-                                  <input {...input} type="text" placeholder="Project name" />
+                                  <label className="form-label">Project Name</label>
+                                  <input {...input} type="text" placeholder="Project name" className="form-input"/>
                                   {meta.error && meta.touched && <span>{meta.error}</span>}
                               </div>
                           )}
@@ -30,8 +30,8 @@ const ProjectForm = (props) => {
                       <Field name="projectLink">
                           { ({input,meta}) => (
                               <div>
-                                  <label>Project Link</label>
-                                  <input {...input} type="text" placeholder="Project link" />
+                                  <label className="form-label">Project Link</label>
+                                  <input {...input} type="text" placeholder="Project link" className="form-input"/>
                                   {meta.error && meta.touched && <span>{meta.error}</span>}
                               </div>
                           )}
@@ -39,13 +39,13 @@ const ProjectForm = (props) => {
                       <Field name="projectDescription">
                           { ({input,meta}) => (
                           <div>
-                              <label>Project Description</label>
-                              <input {...input} type="text" placeholder="Project description" />
+                              <label className="form-label">Project Description</label>
+                              <textarea {...input}  placeholder="Project description" className="form-input form-input-description"/>
                               {meta.error && meta.touched && <span>{meta.error}</span>}
                           </div>
                       )}
                       </Field>
-                      <button type="submit" label="submit">Submit</button>
+                      <button type="submit" label="submit" className="form-submit">Submit</button>
                   </form>
               )}
         />

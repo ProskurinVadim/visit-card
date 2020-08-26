@@ -1,20 +1,22 @@
 import React from "react";
 
-import ProfilePhoto from "../../containers/ProfilePhoto";
-import ProfileInformation from "../../containers/ProfileInformation";
-import Skills from "../../containers/Skills";
-import Container from "../../components/Container";
+import ProfileInformation from "./components/ProfileInformation";
+import Container from "../../components/shared/Container";
+import ProfileResume from  "./components/ProfileResume";
 import "./style.css";
 const HomePage = () => {
     return (
         <section className="home-page">
-            <Container>
-                <div className="profile">
+            <div className="profile">
+                <Container>
                     <ProfileInformation />
-                    <ProfilePhoto />
-                </div>
-                <Skills />
-            </Container>
+                </Container>
+            </div>
+            <div className="resume">
+                <Container>
+                    <ProfileResume />
+                </Container>
+            </div>
         </section>
     )
 };

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Container from "../../components/Container";
-import Project from "../../containers/Project";
-import List from "../../components/List";
+import Container from "../../components/shared/Container";
+import Project from "../../components/Project";
+import List from "../../decorators/List";
 import { connect } from "react-redux"
 import {getProjects} from "../../store/reducers/project/action";
 import "./style.css";
@@ -21,9 +21,8 @@ import "./style.css";
 //         img : "./testImg/photo.jpg"
 //     }];
 
-const ProjectPage  = (props) => {
+const ProjectPage  = ({projects, getProjects}) => {
     const Component = List(Project);
-    const { projects, getProjects} = props;
     useEffect(() => {
         if (!projects) getProjects()
     });

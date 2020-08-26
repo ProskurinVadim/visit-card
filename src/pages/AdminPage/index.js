@@ -1,13 +1,15 @@
 import React from "react";
-import AdminSkill from "./components/AdminSkill";
 import AdminProject from "./components/AdminProject";
 import AdminLibrary from "./components/AdminLibrary"
+import Container from "../../components/shared/Container";
+import "./style.css";
 const AdminPage = () => {
-    return(
+    return (
         <section>
-            <AdminProject />
-            <AdminSkill />
-            <AdminLibrary />
+            <Container>
+                <AdminProject />
+                <AdminLibrary />
+            </Container>
         </section>
     )
 };

@@ -29,17 +29,16 @@ export default (state = initialState, action) => {
             }
         }
         case DELETE_PROJECT : {
-            console.log(action)
             return {
             ...state,
             projects : state.projects.filter((item) => item._id !== action.payload._id)
             }
         }
         case UPDATE_PROJECT : {
-            const updateProjects = state.projects.map((item) => (item._id === action.payload._id) ? action.payload : item);
             return {
                 ...state,
-                projects : updateProjects
+                projects : state.projects.map((item) => (item._id === action.payload._id) ? action.payload
+                : item)
             }
         }
         default : {

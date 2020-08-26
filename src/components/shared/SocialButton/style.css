@@ -1,0 +1,45 @@
+.social-btn {
+    padding-top: 17px;
+    padding-bottom: 18px;
+    width: 280px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Montserrat,sans-serif;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    position: relative;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.social-btn i{
+    position: absolute;
+    left: 25px;
+}
+
+.github {
+    background-color: #f3f3f3;
+    color: #2b414d;
+}
+.github:hover {
+    background-color: #2b414d;
+    color: #f3f3f3;
+}
+.telegram {
+    background-color: #26a6d1;
+}
+.telegram:hover {
+    background-color: #fff;
+    color: #26a6d1;
+    border: 1px solid #26a6d1;
+}
+.facebook {
+    background-color: #3b5998;
+}
+.facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+}

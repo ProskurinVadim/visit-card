@@ -19,13 +19,17 @@ const LibraryForm = ({onSubmit,libraryName}) => {
                     <Field name="libraryName">
                         { ({input,meta}) => (
                             <div>
-                                <label>Library Name</label>
-                                <input {...input} type="text" placeholder="Library name" />
+                                <label className="form-label">Library Name</label>
+                                <input {...input} type="text" placeholder="Library name" className="form-input" />
                                 {meta.error && meta.touched && <span>{meta.error}</span>}
                             </div>
                         )}
                     </Field>
-                    <button type="submit" label="submit">Submit</button>
+                    <button type="submit" label="submit" className="form-submit" onClick={(e)=> {
+                        e.preventDefault();
+                        handleSubmit();
+                    }}
+                    >Submit</button>
                 </form>
             )}
         />

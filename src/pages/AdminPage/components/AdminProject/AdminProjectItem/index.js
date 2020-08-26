@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ProjectForm from "../../ProjectForm";
-import Project from "../../../../../containers/Project";
-import Button from "../../../../../components/Button";
+import Project from "../../../../../components/Project";
+import Button from "../../../../../components/shared/Button";
 import { deleteProject, updateProject } from "../../../../../store/reducers/project/action";
 import { connect } from "react-redux";
 const AdminProjectItem = (props) => {
